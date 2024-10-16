@@ -1,0 +1,32 @@
+GET http://localhost:5000/subscribers
+
+###
+
+GET http://localhost:5000/subscribers/671036cb3e429ece0fc2cfdf
+
+###
+
+POST http://localhost:5000/subscribers
+Content-Type: application/json
+
+{
+  "name": "Mary Doe",
+  "email": "John Doe.com",
+  "phone": 1234567890
+}
+
+###
+
+PATCH http://localhost:5000/subscribers/6710387a78b35da19748625f
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "Jerry Doe.com",
+  "phone": 1256789032
+}
+
+###
+
+DELETE http://localhost:5000/subscribers/671036cb3e429ece0fc2cfdf
+```
